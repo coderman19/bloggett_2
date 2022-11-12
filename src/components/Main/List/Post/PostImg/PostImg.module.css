@@ -1,0 +1,5 @@
+.img img{
+  grid-area: img;
+  border-radius: 20px;
+  align-self: center;
+}
