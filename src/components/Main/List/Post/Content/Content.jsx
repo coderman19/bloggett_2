@@ -1,19 +1,34 @@
 import React from 'react'
 import styles from './Content.module.css'
+import { Text } from '../../../../../UI/Text'
 
 export default function Content({title, author}) {
   return (
-    <div className={styles.content}>
-      <div className={styles.content}>
-        <h2 className={styles.title}>
-          <a className={styles.linkPost} href='#post'>
+    <div className={styles.content}>  
+        <Text 
+          As='h2' 
+          className={styles.title}>
+          <Text 
+            As='a'  
+            size={18}
+            tsize={24}
+            color='orange'
+            className={styles.linkPost} 
+            href='#post'
+          >
             {title}
-          </a>
-        </h2>
-        <a className={styles.linkAuthor} href='#author' >
+          </Text>
+        </Text>
+          <Text 
+            As='a' 
+            color='orange' 
+            size={12} 
+            tsize={14}
+            className={styles.linkAuthor} 
+            href='#author' 
+          >
           {author}
-        </a>
-      </div>
+        </Text>
     </div>
   )
 }

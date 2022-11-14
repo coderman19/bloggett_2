@@ -12,7 +12,7 @@ import Date from './Date/Date';
 export default function Post({postData}) {
   // деструктурируем обьект пришедший через пропс
   const {title, author, ups, date} = postData;
-  console.log('title, author, ups, date ', title, author, ups, date);
+  // console.log('title, author, ups, date ', title, author, ups, date);
   return (
     <li className={styles.post}>
       <PostImg title={title}/>
